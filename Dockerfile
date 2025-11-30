@@ -8,7 +8,8 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 # title
-ENV TITLE="DOSBox Staging"
+ENV TITLE="DOSBox Staging" \
+    SDL_VIDEO_X11_VISUALID=""
 
 RUN \
   echo "**** add icon ****" && \

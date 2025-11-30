@@ -5,6 +5,8 @@ if [ ! -f "${CONFIG}" ]; then
   mkdir -p "${HOME}/.config/dosbox"
   echo "[sdl]" > "${CONFIG}"
   echo "fullscreen=true" >> "${CONFIG}"
+  echo "output=texture" >> "${CONFIG}"
+  echo "texture_renderer=software" >> "${CONFIG}"
   echo "[autoexec]" >> "${CONFIG}"
   echo "@ECHO OFF" >> "${CONFIG}"
   echo "MOUNT C ${HOME}/Desktop" >> "${CONFIG}"
