@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-dosbox-stable
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_USER = 'dosbox-staging'
+  - EXT_REPO = 'dosbox-staging'
+  - BUILD_VERSION_ARG = 'DSTAGING_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-dosbox-staging'
+  - CONTAINER_NAME = 'dosbox-staging'
+  - DOCKERHUB_IMAGE = 'linuxserver/dosbox-staging'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/dosbox-staging'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/dosbox-staging'
+  - DIST_IMAGE = 'debian'
+  - MULTIARCH = 'false'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3001'
+  - CI_SSL = 'true'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
+  - CI_AUTH = 'user:password'
+  - CI_WEBPATH = ''
