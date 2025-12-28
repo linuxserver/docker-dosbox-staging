@@ -106,4 +106,5 @@ init_diagram: |
   "dosbox-staging:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "28.12.25:", desc: "Add Wayland init logic."}
   - {date: "30.08.25:", desc: "Initial release."}
