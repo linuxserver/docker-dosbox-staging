@@ -9,7 +9,8 @@ LABEL maintainer="thelamer"
 
 # title
 ENV TITLE="DOSBox Staging" \
-    SDL_VIDEO_X11_VISUALID=""
+    SDL_VIDEO_X11_VISUALID="" \
+    PIXELFLUX_WAYLAND=true
 
 RUN \
   echo "**** add icon ****" && \
